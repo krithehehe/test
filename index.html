@@ -133,12 +133,16 @@
   <canvas id="confettiCanvas"></canvas>
 
   <main class="card">
-    <!-- ANIMAL WITH HEART -->
-    <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+     <!-- MONKEY + PIG WITH HEART -->
+    <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" aria-label="Monkey and pig with a heart">
       <defs>
         <linearGradient id="fur" x1="0" x2="1">
-          <stop offset="0" stop-color="#f7c7a1"/>
-          <stop offset="1" stop-color="#f2a97b"/>
+          <stop offset="0" stop-color="#c58a5d"/>
+          <stop offset="1" stop-color="#9a623f"/>
+        </linearGradient>
+        <linearGradient id="pig" x1="0" x2="1">
+          <stop offset="0" stop-color="#ffc4d6"/>
+          <stop offset="1" stop-color="#ffa4c0"/>
         </linearGradient>
         <linearGradient id="heart" x1="0" x2="1">
           <stop offset="0" stop-color="#ff4d7d"/>
@@ -146,29 +150,39 @@
         </linearGradient>
       </defs>
 
-      <path d="M250 50 C250 33 270 25 282 38
-               C294 25 314 33 314 50
-               C314 78 282 92 282 106
-               C282 92 250 78 250 50Z"
+      <!-- heart in the middle above both animals -->
+      <path d="M145 46 C145 28 164 19 176 33
+               C188 19 207 28 207 46
+               C207 71 176 85 176 99
+               C176 85 145 71 145 46Z"
             fill="url(#heart)"/>
 
-      <path d="M90 120 C90 70 140 40 190 60
-               C240 40 290 70 290 120
-               C290 180 240 210 190 210
-               C140 210 90 180 90 120Z"
-            fill="url(#fur)"/>
+      <!-- monkey (left) -->
+      <ellipse cx="118" cy="154" rx="30" ry="23" fill="url(#fur)"/>
+      <circle cx="112" cy="120" r="31" fill="url(#fur)"/>
+      <circle cx="79" cy="118" r="14" fill="url(#fur)"/>
+      <circle cx="145" cy="118" r="14" fill="url(#fur)"/>
+      <circle cx="82" cy="118" r="8" fill="#f6d5bc"/>
+      <circle cx="142" cy="118" r="8" fill="#f6d5bc"/>
+      <ellipse cx="112" cy="127" rx="18" ry="14" fill="#f6d5bc"/>
+      <circle cx="104" cy="118" r="3.6" fill="#2d1f1a"/>
+      <circle cx="120" cy="118" r="3.6" fill="#2d1f1a"/>
+      <ellipse cx="112" cy="127" rx="5" ry="4" fill="#7e4432"/>
+      <path d="M105 136 Q112 141 119 136" fill="none" stroke="#7e4432" stroke-width="2.3" stroke-linecap="round"/>
 
-      <path d="M110 92 L95 55 L140 78 Z" fill="#f2a97b"/>
-      <path d="M270 92 L285 55 L240 78 Z" fill="#f2a97b"/>
+      <!-- pig (right) -->
+      <ellipse cx="202" cy="154" rx="30" ry="23" fill="url(#pig)"/>
+      <circle cx="208" cy="122" r="31" fill="url(#pig)"/>
+      <polygon points="184,99 172,79 194,89" fill="#ffa4c0"/>
+      <polygon points="232,99 244,79 222,89" fill="#ffa4c0"/>
+      <circle cx="198" cy="116" r="3.5" fill="#2d1f1a"/>
+      <circle cx="218" cy="116" r="3.5" fill="#2d1f1a"/>
+      <ellipse cx="208" cy="129" rx="13" ry="9" fill="#ff88b0"/>
+      <ellipse cx="203" cy="129" rx="2.1" ry="2.8" fill="#d85d89"/>
+      <ellipse cx="213" cy="129" rx="2.1" ry="2.8" fill="#d85d89"/>
 
-      <circle cx="160" cy="130" r="8"/>
-      <circle cx="220" cy="130" r="8"/>
-
-      <path d="M190 144 C186 144 182 148 182 152
-               C182 160 190 164 190 170
-               C190 164 198 160 198 152
-               C198 148 194 144 190 144Z"
-            fill="#ff7aa2"/>
+      <!-- together overlap in the center -->
+      <ellipse cx="160" cy="156" rx="18" ry="13" fill="#ffd1de" opacity="0.65"/>
     </svg>
 
     <h1>Mithun will you be my valentine?</h1>
@@ -300,6 +314,7 @@
   </script>
 </body>
 </html>
+
 
 
 
